@@ -35,16 +35,19 @@
 
 * pickup_longitude
 ![Untitled](https://user-images.githubusercontent.com/94269160/235988450-d1e8186f-2d3b-4fd3-abc0-8108bdd3ac9c.png)
-*pickup_latitude
+* pickup_latitude
 ![Untitled1](https://user-images.githubusercontent.com/94269160/235988448-469338ca-a7f9-40d4-9850-630a4d815098.png)
-*dropoff_longitude
+* dropoff_longitude
 ![Untitled2](https://user-images.githubusercontent.com/94269160/235988446-60ad987e-b316-4d56-b639-86d2bfda0cc0.png)
-*dropoff_latitude
+* dropoff_latitude
 ![Untitled3](https://user-images.githubusercontent.com/94269160/235988442-98595c3f-53b1-404c-a19e-cbd515e11528.png)
-*passenger_count
+* passenger_count
 ![Untitled4](https://user-images.githubusercontent.com/94269160/235988434-77ad5ad9-6070-4b59-9fed-0dad2533613a.png)
+* Histogram of Fare Prices
 ![Hist](https://user-images.githubusercontent.com/94269160/235988458-2e681445-20ae-4c5a-8a99-383dfbf2cdf0.png)
+* Average Difference of Latitude vs Longitude
 ![LatLongDiff](https://user-images.githubusercontent.com/94269160/235988456-870ad70b-35c2-498c-97f9-ef714ee4c988.png)
+* Fare Price Per Passenger (up to 5)
 ![FarePerPass](https://user-images.githubusercontent.com/94269160/235988453-efc9e963-9f41-488a-a12e-4966133c14b9.png)
 
 ### Problem Formulation
@@ -53,7 +56,6 @@
   * Input / Output
   * Models:
     * Used Linear Regression
-    
 
 ### Training
 
@@ -74,9 +76,6 @@
 * 
 
 ### Overview of files in repository
-
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
 * Files in Repository:
   *  EfazH_NYC-Taxi-Fare_V2.ipynb
   *  EfazH_NYC_Taxi.ipynb
@@ -93,15 +92,12 @@
   * ZipFile to extract the data from the .zip file in Kaggle
   
 ### Training
-
 * First 
 
 #### Performance Evaluation
-
 * Describe how to run the performance evaluation.
 
 
 ## Citations
-
 * https://www.kaggle.com/code/dster/nyc-taxi-fare-starter-kernel-simple-linear-model
 * https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction
