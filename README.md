@@ -4,7 +4,7 @@
 
 ## Overview
 
-*
+* Challenge Link: https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction
   * **Definition of the tasks / challenge**  The task at hand is to predict the fare amount for a taxi ride in New York City, with machine learning techniques from the Keras models.
   * **Your approach** The approach in this repository formulates the problem as a deep learning training model. Using the Sequential/Dense models from the Keras model, we ran 25 epochs on the data set.
   * **Summary of the performance achieved** Our best model was able to predict the taxi fare price within 5%, 90% of the time. At the current time of writing, the best performance on Kaggle of this metric is 4.08%. 
@@ -120,4 +120,4 @@
 
 ## Citations
 
-* Provide any references.
+* https://www.kaggle.com/code/dster/nyc-taxi-fare-starter-kernel-simple-linear-model
