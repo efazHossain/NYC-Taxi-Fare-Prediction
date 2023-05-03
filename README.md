@@ -21,7 +21,7 @@
   * Instances (Train, Test, Validation Split):
     *   Train: 55,000,000 rows but reduced to 4,000,000
     *   Test: 10,000 rows
-    *   No Validation Split
+    *   Validation Split of 100,000 rows
 
 #### Preprocessing / Clean up
 
@@ -29,15 +29,19 @@
 * A small amount of null entries existed so they were dropped from the set
 * There exist fare amounts that are in the negatives and high up into the $1000s, so the range of the fare amount is limited to $2.00 and $600.
 * Passenger count went up to 208, so it was reduced to a reasonal maximum capacity of a typical taxi which is 5 passengers.
-* pickup_datetime was transformed into a numerical type and split into multiple attributes consisting of Year, Month, Day, Weekday and Hour.
 * Longitude and Latitude values that were outside of the bounds of (-75,-72) and (40,42) were removed as it does not lie in the NYC area.
 
 #### Data Visualization
 
+* pickup_longitude
 ![Untitled](https://user-images.githubusercontent.com/94269160/235988450-d1e8186f-2d3b-4fd3-abc0-8108bdd3ac9c.png)
+*pickup_latitude
 ![Untitled1](https://user-images.githubusercontent.com/94269160/235988448-469338ca-a7f9-40d4-9850-630a4d815098.png)
+*dropoff_longitude
 ![Untitled2](https://user-images.githubusercontent.com/94269160/235988446-60ad987e-b316-4d56-b639-86d2bfda0cc0.png)
+*dropoff_latitude
 ![Untitled3](https://user-images.githubusercontent.com/94269160/235988442-98595c3f-53b1-404c-a19e-cbd515e11528.png)
+*passenger_count
 ![Untitled4](https://user-images.githubusercontent.com/94269160/235988434-77ad5ad9-6070-4b59-9fed-0dad2533613a.png)
 ![Hist](https://user-images.githubusercontent.com/94269160/235988458-2e681445-20ae-4c5a-8a99-383dfbf2cdf0.png)
 ![LatLongDiff](https://user-images.githubusercontent.com/94269160/235988456-870ad70b-35c2-498c-97f9-ef714ee4c988.png)
