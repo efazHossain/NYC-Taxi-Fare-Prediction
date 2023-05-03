@@ -7,7 +7,7 @@
 *
   * **Definition of the tasks / challenge**  The task at hand is to predict the fare amount for a taxi ride in New York City, with machine learning techniques from the Keras models.
   * **Your approach** The approach in this repository formulates the problem as a deep learning training model. Using the Sequential/Dense models from the Keras model, we ran 25 epochs on the data set.
-  * **Summary of the performance achieved** Our best model was able to predict the taxi fare price within 5%, 90% of the time. At the current time of writing, the best performance on Kaggle of this metric is 4.68%. 
+  * **Summary of the performance achieved** Our best model was able to predict the taxi fare price within 5%, 90% of the time. At the current time of writing, the best performance on Kaggle of this metric is 4.08%. 
 
 ## Summary of Workdone
 
@@ -33,15 +33,22 @@
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
+![Untitled](https://user-images.githubusercontent.com/94269160/235988450-d1e8186f-2d3b-4fd3-abc0-8108bdd3ac9c.png)
+![Untitled1](https://user-images.githubusercontent.com/94269160/235988448-469338ca-a7f9-40d4-9850-630a4d815098.png)
+![Untitled2](https://user-images.githubusercontent.com/94269160/235988446-60ad987e-b316-4d56-b639-86d2bfda0cc0.png)
+![Untitled3](https://user-images.githubusercontent.com/94269160/235988442-98595c3f-53b1-404c-a19e-cbd515e11528.png)
+![Untitled4](https://user-images.githubusercontent.com/94269160/235988434-77ad5ad9-6070-4b59-9fed-0dad2533613a.png)
+![Hist](https://user-images.githubusercontent.com/94269160/235988458-2e681445-20ae-4c5a-8a99-383dfbf2cdf0.png)
+![LatLongDiff](https://user-images.githubusercontent.com/94269160/235988456-870ad70b-35c2-498c-97f9-ef714ee4c988.png)
+![FarePerPass](https://user-images.githubusercontent.com/94269160/235988453-efc9e963-9f41-488a-a12e-4966133c14b9.png)
 
 ### Problem Formulation
 
 * Define:
   * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+  * Models:
+    * Used Linear Regression
+    
 
 ### Training
 
