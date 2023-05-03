@@ -1,4 +1,5 @@
 # NYC Taxi Fare Prediction
+![taxi-fare-1561717](https://user-images.githubusercontent.com/94269160/235989642-d8654982-b3ea-4df2-ba8f-786d8b1e1415.jpg)
 
 * **One Sentence Summary** This repository holds an attempt to apply Machine Learning (ML) models in an attempt to predict the taxi fare price in New York City when given the pickup and dropoff locations.
 
