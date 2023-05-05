@@ -55,7 +55,7 @@
 * Define: Ideally, the model should reflect the data that is contained in the sample_submission.csv file or at least close to it. And to do so, we need to train a model or models in this case.
   * Input / Output: 
       * Input: train.csv, test.csv
-      * Output: submission.csv - a 2 x X .csv file that contains the key (date-time) and fare_amount in USD.
+      * Output: submission.csv - a 2x2 .csv file that contains the key (date-time) and fare_amount in USD.
   * Models:
     * Used Linear Regression -> predict the value of the taxi fare based upon past data
     * Used GradientBoostingRegressor -> calculate the difference between the trained model and past models in order to train a weak model to fit the difference, or in better words, a residual.
@@ -79,10 +79,9 @@
 * First start with downloading the files from the link
 * Then, import the libraries shown below
 * Next, create a cell and extract the .zip file into your repository, it will slowly extract all 5.7 GBs of data into a "train.csv" file
-* Afterwards, begin reading in the train.csv and test.csv file into a Pandas Dataframe. Be sure to use a small amount of data when loading it in like at minimum 100,000 rows and up to 4,000,000 rows since it overall contains 55,000,000 rows in total.
 * Be sure to also make a list of the column names that can be used to plot the features and split data sets.
 * Look at the head of the dataframe and general statistics of the df by using df.head() and df.describe()
-* Afterwards, plot each features by formulating a for-loop that iterates over each feature with the execption of the 'key' column as it contains the date and time of each dropoff/pickup location.
+* Afterwards, plot each features via for-loop
 * Histogram the fare_amount column to see the spread of the fare prices ranging from $2 to $80.
 * Drop missing values and start splitting data into training and validation sets.
 * Using the LinearRegression model from sci-kit-learn, we can fit a model using the training sets and find a RMSE (Root-Mean-Squared-Error) score.
