@@ -53,10 +53,13 @@
 ![FarePerPass](https://user-images.githubusercontent.com/94269160/235988453-efc9e963-9f41-488a-a12e-4966133c14b9.png)
 
 ### Problem Formulation
-* Define:
-  * Input / Output
+* Define: Ideally, the model should reflect the data that is contained in the sample_submission.csv file or at least close to it. And to do so, we need to train a model or models in this case.
+  * Input / Output: 
+      * Input: train.csv, test.csv
+      * Output: submission.csv - a 2 x X .csv file that contains the key (date-time) and fare_amount in USD.
   * Models:
-    * Used Linear Regression
+    * Used Linear Regression -> predict the value of the taxi fare based upon past data
+    * Used GradientBoostingRegressor -> calculate the difference between the trained model and past models in order to train a weak model to fit the difference, or in better words, a residual.
 
 ### Training
 * Describe the training:
@@ -64,13 +67,26 @@
   * 
 
 ### Conclusions
-* 
+* Overall, the fare cost for a taxi in New York City should be around $11.35 dollars as in the sample-submission.csv file.
+* In my model, the fare cost would average at around $11.47 with a RMSE score of 4.08, which ideally is not a bad score but, a value closer to ~0 would be a much better showcase of the model training.
 
 ### Future Work
-* 
+* In the future, I plan to use more better models to get the RMSE score to at least around 1-3 as a lower RMSE score shows how well a model is accurately predicting the trend from a given dataset.
+* Models from Keras would especially help accomplish more as of currently, I do not have much experience with it.
 
 ## How to reproduce results
-* 
+* First start with downloading the files from the link
+* Then, import the libraries shown below
+* Next, create a cell and extract the .zip file into your repository, it will slowly extract all 5.7 GBs of data into a "train.csv" file
+* Afterwards, begin reading in the train.csv and test.csv file into a Pandas Dataframe. Be sure to use a small amount of data when loading it in like at minimum 100,000 rows and up to 4,000,000 rows since it overall contains 55,000,000 rows in total.
+* Be sure to also make a list of the column names that can be used to plot the features and split data sets.
+* Look at the head of the dataframe and general statistics of the df by using df.head() and df.describe()
+* Afterwards, plot each features by formulating a for-loop that iterates over each feature with the execption of the 'key' column as it contains the date and time of each dropoff/pickup location.
+* Histogram the fare_amount column to see the spread of the fare prices ranging from $2 to $80.
+* Drop missing values and start splitting data into training and validation sets.
+* Using the LinearRegression model from sci-kit-learn, we can fit a model using the training sets and find a RMSE (Root-Mean-Squared-Error) score.
+* Another model that was used is the GradientBoostingRegressor which uses a loss function to start predicting the trend for the data.
+* Finally, make an array of the predicted values and turn it into a .csv file after categorizing it to only contain the key (date and time) and fare_amount from the original dataset.
 
 ### Overview of files in repository
 * Files in Repository:
@@ -88,11 +104,6 @@
   * Sklearn
    * train_test_split, mean_squared_error and LinearRegression
   * ZipFile to extract the data from the .zip file in Kaggle
-  
-### Training
-* First 
-
-#### Performance Evaluation
 
 ## Citations
 * https://www.kaggle.com/code/dster/nyc-taxi-fare-starter-kernel-simple-linear-model
