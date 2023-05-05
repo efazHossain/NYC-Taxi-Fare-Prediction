@@ -15,9 +15,9 @@
     * Input: CSV file consisting of 8 columns which contained a unique time key, the fare price amount and 6 features to go along with it
   * Size: 5.7 GB which was then reduced to 7% -> 400 MB
   * Instances (Train, Test, Validation Split):
-    *  Train: 55,000,000 rows but reduced to 4,000,000
-    *  Test: 10,000 rows
-    *  Validation Split of 100,000 rows
+    *  Train: 55,000,000 passengers initially but reduced to 4,000,000 passengers
+    *  Test: 10,000 passengers
+    *  Validation Split of 100,000 passengers
   * Features:
     * pickup_datetime - timestamp value indicating when the taxi ride started.
     * pickup_longitude - float for longitude coordinate of where the taxi ride started.
