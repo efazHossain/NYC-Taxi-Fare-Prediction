@@ -100,12 +100,11 @@
   
 ### Software Setup
 * Required Packages:
-  * Pandas
-  * Numpy
-  * Matplotlib.pyplot
-  * Sklearn
-   * train_test_split, mean_squared_error and LinearRegression
-  * ZipFile to extract the data from the .zip file in Kaggle
+  * Pandas: view .csv as a dataframe and analyze it
+  * Numpy: set up an array for predicted values
+  * Matplotlib.pyplot: plot each feature and the main feature itself
+  * Sklearn: train_test_split, mean_squared_error and LinearRegression
+  * ZipFile: extract the data from the .zip file in Kaggle
 
 ## Citations
 * https://www.kaggle.com/code/dster/nyc-taxi-fare-starter-kernel-simple-linear-model
