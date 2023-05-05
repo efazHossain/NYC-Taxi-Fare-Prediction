@@ -63,8 +63,10 @@
 
 ### Training
 * Describe the training:
-  * Model was trained for 25 epochs
-  * 
+  * Using LinearRegression
+        * Model was trained under two sets, a training and a validation set. Both sets were used in an attempt to replicate the fare price of the sample_submission.csv file by using the RMSE (Root-Mean-Squared-Error) score to see if there is any skew between the data and the model.
+  * Using GradientBoostingRegressor
+        * Model was trained with a regression fit to predict the fare price by using the data and comparing it with a weaker regression model to boost itself into predicting the "true" value by using the difference between each prediction.
 
 ### Conclusions
 * Overall, the fare cost for a taxi in New York City should be around $11.35 dollars as in the sample-submission.csv file.
