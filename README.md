@@ -76,9 +76,8 @@
 * Models from Keras would especially help accomplish more as of currently, I do not have much experience with it.
 
 ## How to reproduce results
-* First start with downloading the files from the link
-* Then, import the libraries shown below
-* Next, create a cell and extract the .zip file into your repository, it will slowly extract all 5.7 GBs of data into a "train.csv" file
+* Clone the Repository, then start with downloading the files from the link
+* Next, create a cell and extract the .zip file into your repository, it will slowly extract all 5.7 GBs of the data into a "train.csv" file
 * Be sure to also make a list of the column names that can be used to plot the features and split data sets.
 * Look at the head of the dataframe and general statistics of the df by using df.head() and df.describe()
 * Afterwards, plot each features via for-loop
