@@ -99,6 +99,7 @@
   * sample_submission.csv: a sample submission file in the correct format (columns key and fare_amount). This file 'predicts' fare_amount to be $11.35 for all rows, which is the mean fare_amount from the training set.
   
 ### Software Setup
+* Python 3.7 or higher
 * Required Packages:
   * Pandas: view .csv as a dataframe and analyze it
   * Numpy: set up an array for predicted values
