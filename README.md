@@ -6,7 +6,6 @@
 ### Overview
 * Challenge Link: https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction
   * **Definition of the tasks / challenge**:  The task at hand is to predict the fare amount for a taxi ride in New York City, with machine learning techniques using a Linear Regression problem. The challenge evaluates the RMSE (Root-Mean-Squared-Error) between the prediction model and what is the ground truth. A good RMSE score that is close to ~0 but not higher than 5 can help tell you how incorrect the model might be on unseen data.
-  * **My approach**: The approach in this repository formulates the problem as a deep learning training model. Using the Sequential/Dense models from the Keras model, we ran 25 epochs on the data set.
   * **Summary of the performance achieved**: Our best model was able to predict the taxi fare price within 8%, 90% of the time. At the current time of writing, the best performance on Kaggle of this metric is 4.08%. 
 
 ### Data
@@ -28,8 +27,8 @@
 
 #### Preprocessing / Clean up
 
-* Due to data consisting of 55,000,000 rows and a size of 5.7 GBs, it was cut down to only 4,000,000 rows which had a final size of 400 MB.
-* A small amount of null entries existed so they were dropped from the set
+* Due to data consisting of 55,000,000 rows but it was cut down to only 4,000,000 rows being read in.
+* A small amount of null entries existed so they were dropped from the set.
 * There exist fare amounts that are in the negatives and high up into the $1000s, so the range of the fare amount is limited to $2.00 and $600.
 * Passenger count went up to 208, so it was reduced to a reasonal maximum capacity of a typical taxi which is 5 passengers.
 * Longitude and Latitude values that were outside of the bounds of (-75,-72) and (40,42) were removed as it does not lie in the NYC area.
@@ -92,9 +91,9 @@
 
 ### Overview of files in repository
 * Files in Repository:
-  *  EfazH_NYC-Taxi-Fare_V2.ipynb: re-worked and cleaned up code of the notebook below  
-  *  EfazH_NYC_Taxi.ipynb: notebook consisting of all imported libraries and model training code  
-  *  efazh_kaggle.csv: submission .csv file showing the key (date-time) and fare_amount  
+  *  EfazH_NYC-Taxi-Fare.ipynb: notebook using LinearRegression
+  *  EfazH_NYC_Taxi_V2.ipynb: notebook using GradientBoostingRegressor  
+  *  efazh_kaggle.csv: my submission.csv file showing the key (date-time) and fare_amount  
   *  efazh_kaggle_v2.csv: second submission .csv file showing only the fare_amount, averaging at around $11.38 which is close to the sample_submission file
   * sample_submission.csv: a sample submission file in the correct format (columns key and fare_amount). This file 'predicts' fare_amount to be $11.35 for all rows, which is the mean fare_amount from the training set.
   
